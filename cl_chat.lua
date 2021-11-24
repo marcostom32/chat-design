@@ -1,5 +1,5 @@
 local isRDR = not TerraingridActivate and true or false
-local QBCore = exports['qb-core']:GetCoreObject()
+
 local chatInputActive = false
 local chatInputActivating = false
 local chatLoaded = false
