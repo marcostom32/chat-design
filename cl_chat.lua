@@ -58,23 +58,15 @@ local addMessage = function(message)
     }
   end
   local color = '255,255,255'
-  local messager = ''
-  local text1 = message.args[1];   local text2 = message.args[2];
-  local messagetemplate = {
-    template = '<div class="chat-message"style="border-left: 3px solid rgba('..color..', 0.774);"><div class="chat-message-body"><strong>{0}:</strong> {1}</div></div>',
-    args = { text1, text2}
-    }
+  local messager = nil
 
   if message.args[3] ~= nil or false then
       messager = message
-  elseif message.color[1] ~= nil or false then
-    messager = messagetemplate
   else
-    color = ''..message.color[1]..','..message.color[2]..','..message.color[3]..'';
-    messager = messagetemplate
+      local text1 = message.args[1];   local text2 = message.args[2];
+      color = ''..message.color[1]..','..message.color[2]..','..message.color[3]..'';
+      messager = { template = '<div class="chat-message"style="border-left: 3px solid rgba('..color..', 0.774);"><div class="chat-message-body"><strong>{0}:</strong> {1}</div></div>', args = { text1, text2}}
   end
-
-
   SendNUIMessage({
     type = 'ON_MESSAGE',
     message = messager

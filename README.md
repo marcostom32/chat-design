@@ -6,7 +6,11 @@ chat design for qb-core
 
 # -------- Important --------
 Don't replace the entire folder, just copy the files and paste in your chat folder.
-
+If you have the color error 
+```
+attempt to index a nil value ( field 'color')
+```
+Just go to the script that uses 'chat:addMessage' and add the color field.
 
 
 # Change color of the border
