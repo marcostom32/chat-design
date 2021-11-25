@@ -5,7 +5,10 @@ chat design for qb-core
 ![Preview](https://i.imgur.com/Q6lkbXu.png)
 
 # -------- Important --------
+
 Don't replace the entire folder, just copy the files and paste in your chat folder.
+
+Download the default chat of cfx from here - https://github.com/citizenfx/cfx-server-data
 If you have the color error 
 ```
 attempt to index a nil value ( field 'color')
