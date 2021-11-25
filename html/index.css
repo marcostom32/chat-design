@@ -143,15 +143,15 @@ textarea:focus, input:focus {
   font-size: 1.65vh;
   box-sizing: border-box;
   color: white;
-  width: 100%;
   background: linear-gradient(-45deg, #382025b6,#501a26bd,#410e19b6,#5c0115b6);
   background-size: 400% 400%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
+  width: 100%;
   border-top: 2.5px solid;
   border-bottom: 2.5px solid;
   border-image: linear-gradient(var(--angle), #241216, #4b1f28,#92283d,#b61938,#ff0033) 1;
-  animation:5s rotate linear ease-in-out, 5s gradient linear ease-in-out;
+  animation:5s rotate linear infinite, 5s gradient linear infinite;
 }
 
 .help {
