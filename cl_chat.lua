@@ -66,11 +66,6 @@ local addMessage = function(message)
   else
       local text1 = message.args[1];   local text2 = message.args[2];
       color = ''..message.color[1]..','..message.color[2]..','..message.color[3]..'';
-      if not color then
-        color = '255,255,255'
-      else
-        color = ''..message.color[1]..','..message.color[2]..','..message.color[3]..'';
-      end
       messager = { template = '<div class="chat-message"style="border-left: 3px solid rgba('..color..', 0.774);"><div class="chat-message-body"><strong>{0}:</strong> {1}</div></div>', args = { text1, text2}}
   end
   SendNUIMessage({
